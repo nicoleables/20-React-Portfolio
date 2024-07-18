@@ -71,6 +71,7 @@ h2 {
   font-size: 20px;
 }
 
+
 .about-me img {
   align-self: flex-start;
   border-radius: 50%;
@@ -112,15 +113,19 @@ strong {
   justify-content: space-between; 
   padding: 1.8em 0;
   border-top: 3px solid black;
+  margin-top: -7px;
 }
 
 #footer nav ul {
-  list-style-type: none;
-  display: flex; 
+  list-style: none;
+  padding: 3px 0;
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
 }
 
 #footer nav ul li {
-  margin-right: 23%; 
+  justify-content: space-around;
 }
 
 #footer nav ul li:last-child {
