@@ -1,0 +1,66 @@
+/* Skills Section */
+.my-skills {
+  padding: 4%;
+  background-color: var(--secondary-color); /* Soft Whisper White for a clean background */
+}
+
+.skills h2 {
+  font-family: var(--font-main); /* Montserrat for modern typography */
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-color); /* Midnight Navy for a professional touch */
+}
+
+/* Skills List - Flex Layout */
+.skills-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem; /* Space between cards */
+  flex-wrap: wrap;
+}
+
+/* Skill Cards */
+.skills-card {
+  flex: 1;
+  max-width: 400px;
+  background-color: var(--secondary-color); /* Soft Whisper White for consistency */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.skills-card h3 {
+  font-family: var(--font-main); /* Montserrat for headings */
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color); /* Lavender Purple for category titles */
+}
+
+.skills-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-card ul li {
+  font-family: var(--font-secondary); /* Playfair Display for elegant text */
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-color); /* Neutral Gray Slate for readability */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .skills-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+

@@ -1,0 +1,64 @@
+/* Navigation */
+.header-class nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem; /* Spacing for clarity */
+}
+
+.header-class nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF; /* White for clarity */
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.header-class nav ul li a:hover {
+  color: var(--accent-color); /* Lavender Purple for a gentle hover effect */
+  background-color: rgba(201, 167, 255, 0.2); /* Light Lavender tint */
+  padding: 5px 10px; /* Add slight padding */
+  border-radius: 5px;
+}
+
+
+.header-class nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 0;
+  background: var(--accent-color); /* Lavender Purple for underline */
+  transition: width 0.3s ease;
+}
+
+.header-class nav ul li a:hover::after {
+  width: 100%; /* Expand underline */
+}
+
+.header-class nav ul li a.active {
+  color: var(--accent-color); /* Lavender Purple for active links */
+  border-bottom: 3px solid var(--accent-color);
+  font-weight: bold;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  .header-class nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+  }
+
+  .header-class nav ul li a {
+      font-size: 1.5rem;
+  }
+}
+
+  
+  
+  
+  
+  

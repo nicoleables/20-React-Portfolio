@@ -1,4 +1,6 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
+import "../styles/skills.css";
 
 function Skills() {
   return (
@@ -6,8 +8,9 @@ function Skills() {
       <div className="skills">
         <h2>Skills</h2>
         <div className="skills-list">
-          <div className="frontend-section">
-            <h3>Front-end</h3>
+          {/* Front-end Skills */}
+          <div className="skills-card">
+            <h3>Front-End</h3>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -21,7 +24,9 @@ function Skills() {
               <li>TypeScript</li>
             </ul>
           </div>
-          <div className="backend-section">
+
+          {/* Back-end Skills */}
+          <div className="skills-card">
             <h3>Back-End</h3>
             <ul>
               <li>APIs</li>
@@ -39,4 +44,4 @@ function Skills() {
   );
 }
 
-export default Skills
+export default Skills;

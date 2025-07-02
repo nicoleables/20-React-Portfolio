@@ -1,0 +1,29 @@
+:root {
+  --primary-color: #2A2F4F; /* Midnight Navy */
+  --secondary-color: #F7F7FB; /* Soft Whisper White */
+  --accent-color: #C9A7FF; /* Lavender Purple */
+  --text-color: #4A5568; /* Neutral Gray Slate */
+  --link-color: #6AA9B6; /* Crystal Blue */
+  --button-hover-color: #F9D5E5; /* Light Pink Blush */
+  --font-main: 'Montserrat', sans-serif;
+  --font-secondary: 'Playfair Display', serif;
+}
+
+body {
+  margin: 0; 
+  padding: 0; 
+  background-color: var(--secondary-color); /* Soft white for a clean look */
+  color: var(--text-color); /* Charcoal gray for readability */
+  height: 100%;
+  width: 100vw;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+
+
+

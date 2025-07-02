@@ -1,0 +1,55 @@
+/* Resume Section */
+.my-resume {
+  padding: 4%;
+  text-align: center;
+  background-color: var(--secondary-color); /* Soft Whisper White for consistency */
+}
+
+.my-resume h2 {
+  font-family: var(--font-main); /* Montserrat for modern headings */
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color); /* Midnight Navy for a professional look */
+}
+
+/* Resume Preview */
+.resume-preview {
+  width: 80%; /* Ensures proper visibility on larger screens */
+  max-width: 600px; /* Limit maximum width for balance */
+  height: 500px; /* Fixed height for readability */
+  border: 1px solid var(--text-color); /* Neutral Gray Slate for subtle border */
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Download Button */
+.resume-button {
+  display: inline-block;
+  font-family: var(--font-secondary); /* Playfair Display for elegance */
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  background-color: var(--link-color); /* Crystal Blue for button */
+  color: var(--secondary-color); /* Whisper White for text */
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: var(--primary-color); /* Midnight Navy on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Depth effect */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .resume-preview {
+    width: 100%; /* Full width for smaller screens */
+    height: auto; /* Allow height to adjust dynamically */
+  }
+
+  .resume-button {
+    font-size: 1rem; /* Slightly smaller button text for compact layout */
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
+}
+

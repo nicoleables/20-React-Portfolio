@@ -1,0 +1,107 @@
+/* Header Container */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  height: 20vh;
+  background: linear-gradient(90deg, var(--primary-color), var(--link-color));
+  background-size: 200% 200%; /* Ensures the animation looks smooth */
+  animation: gradientShift 6s infinite; /* Animated gradient background */
+  border-bottom: 3px solid var(--accent-color);
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Gradient Animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Typography */
+h1 {
+  font-family: var(--font-main);
+  font-weight: 800;
+  font-size: 3rem;
+  color: var(--secondary-color);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px; /* Spacing between letters */
+  line-height: 1.2; /* Adjust spacing between lines */
+  transition: text-shadow 0.3s ease; /* For hover effect */
+}
+
+h1:hover {
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 span {
+  color: var(--accent-color);
+  font-size: 1.1em;
+}
+
+p {
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: var(--secondary-color);
+  font-style: italic;
+  opacity: 0.9;
+  letter-spacing: 1px; /* Refined text spacing */
+  line-height: 1.5;
+  transition: text-shadow 0.3s ease; /* Hover effect */
+}
+
+p:hover {
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Hero Animation */
+h1, p {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Navigation Transition */
+.header-class nav {
+  animation: navFadeIn 1.5s ease-in-out;
+}
+
+@keyframes navFadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+  
+  
+  

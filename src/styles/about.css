@@ -1,0 +1,69 @@
+/* About Me Section */
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3%;
+  margin: 2% auto;
+  background-color: var(--secondary-color); /* Soft Whisper White for a clean look */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Depth effect */
+}
+
+/* Content Styles */
+.content {
+  text-align: center;
+}
+
+/* Header */
+h2 {
+  font-family: var(--font-main); /* Montserrat for modern style */
+  font-size: 2.5rem;
+  color: var(--primary-color); /* Midnight Navy for professionalism */
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+/* About Text */
+.about-text {
+  font-family: var(--font-secondary); /* Playfair Display for elegance */
+  font-size: 1.2rem;
+  color: var(--text-color); /* Neutral Gray Slate for readability */
+  line-height: 1.6;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: rgba(201, 167, 255, 0.2); /* Subtle Lavender Purple tint for emphasis */
+  border-radius: 5px;
+}
+
+/* Highlight Skills */
+.about-text strong {
+  color: var(--link-color); /* Crystal Blue for standout text */
+  font-weight: bold;
+}
+
+/* Resized Image */
+.resized-image {
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
+  display: block; /* Centers the image */
+  border: 5px solid var(--accent-color); /* Lavender Purple border for consistency */
+  border-radius: 50%; /* Circular shape */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .about-me {
+    padding: 5%;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .resized-image {
+    width: 120px; /* Scaled down for mobile */
+  }
+}
+

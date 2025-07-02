@@ -1,0 +1,99 @@
+/* Projects Section */
+#projects {
+  padding: 4%;
+  background-color: var(--secondary-color); /* Soft Whisper White for a clean background */
+  text-align: center;
+}
+
+#projects h2 {
+  font-family: var(--font-main); /* Montserrat for modern typography */
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color); /* Midnight Navy for a professional touch */
+}
+
+/* Grid Layout for Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem; /* Space between cards */
+}
+
+/* Project Card Styling */
+.project-card {
+  background-color: var(--secondary-color); /* Soft Whisper White for consistency */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 1.5rem;
+  text-align: left; /* Align content to the left */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px; /* Rounded corners for images */
+  margin-bottom: 1rem;
+}
+
+/* Project Card Content */
+.project-card h3 {
+  font-family: var(--font-main); /* Montserrat for headings */
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--text-color); /* Neutral Gray Slate for clarity */
+}
+
+.project-card p {
+  font-family: var(--font-secondary); /* Playfair Display for elegance */
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-color); /* Neutral Gray Slate for readability */
+  margin-bottom: 1.5rem;
+}
+
+/* Project Links */
+.project-card .links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-card .links a {
+  position: relative;
+  color: var(--link-color); /* Crystal Blue for links */
+  text-decoration: none; /* Clean link appearance */
+}
+
+.project-card .links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent-color); /* Lavender Purple for emphasis */
+  transition: width 0.3s ease;
+}
+
+.project-card .links a:hover::after {
+  width: 100%; /* Expand underline on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .projects-grid {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+
+  .project-card {
+      text-align: center; /* Center text for mobile */
+  }
+}
+
+

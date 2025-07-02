@@ -1,0 +1,82 @@
+/* Footer Container */
+#footer {
+  background: linear-gradient(to bottom, var(--primary-color), #1a1f36); /* Gradient background */
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 0;
+  border-top: 4px solid var(--accent-color);
+  text-align: center;
+}
+
+/* Navigation */
+#footer nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Space between links */
+}
+
+#footer nav ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem; /* Adjusted spacing for balance */
+}
+
+/* Links */
+#footer nav ul li a {
+  text-decoration: none;
+  color: var(--secondary-color); /* Soft Whisper White for links */
+  font-size: 1.2rem;
+  font-family: var(--font-secondary); /* Playfair Display for elegant styling */
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 5px; /* Button-like appearance for links */
+}
+
+#footer nav ul li a:hover {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* SVG Icon Styling */
+#footer nav ul li svg {
+  fill: var(--secondary-color); /* Matches text color */
+  transition: fill 0.3s ease;
+}
+
+#footer nav ul li svg:hover {
+  fill: var(--accent-color);
+  transform: rotate(15deg); /* Gentle rotation effect */
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+/* Footer Text */
+#footer small {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  font-family: var(--font-secondary);
+  border-top: 2px dashed var(--accent-color); /* Dashed line divider */
+  padding-top: 1rem; /* Adds spacing above text */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  #footer nav ul {
+    flex-direction: column;
+    gap: 1.5rem; /* Adjusted spacing for smaller screens */
+  }
+
+  #footer nav ul li a {
+    font-size: 1rem; /* Slightly smaller font size for mobile */
+    padding: 8px 15px; /* Compact padding for smaller screens */
+  }
+}
+
+
+
